@@ -4,8 +4,9 @@
 	<title></title>
 </head>
 <body>
-<form action="/" method="POST">
-    <input type="text" name="account_name" placeholder="First Name">
+	your name
+<form action="{{url_for('sign_up')}}" method="POST">
+    <input type="text" name="account_name" placeholder="First Name" autocomplete="off">
     <br>
     <input type="submit" value="Submit">
 </form>

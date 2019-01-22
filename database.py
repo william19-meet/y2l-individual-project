@@ -16,3 +16,10 @@ def create_account(name):
 def get_all_accounts():
     account = session.query(Account).all()
     return account
+
+#def correct_answer(question,answer):
+	# if answer == :	
+	# 	return "CORRECT!"
+	# else:
+	# 	return "WRONG!"
+
