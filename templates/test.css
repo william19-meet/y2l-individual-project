@@ -1,7 +1,4 @@
-<!DOCTYPE html>
-<html>
-<style type="text/css">
-body {
+    body {
       animation: colorchange 50s; /* animation-name followed by duration in seconds*/
          /* you could also use milliseconds (ms) or something like 2.5s */
       -webkit-animation: colorchange 50s; /* Chrome and Safari */
@@ -24,15 +21,3 @@ body {
       75%  {background: green;}
       100% {background: red;}
     }
-</style>
-<head>
-	<title></title>
-</head>
-<body>
-	<h1><p align = center>timmy fell to the ground. why?</p></h1>
-<form action="{{url_for('question3')}}" method="POST">
-    <input type="text" name="answer" placeholder="Answer" autocomplete="off">
-    <br>
-    <input type="submit" value="Submit">
-</body>
-</html>

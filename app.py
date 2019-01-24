@@ -16,7 +16,7 @@ def sign_up():
 def question1():
 	if request.method == 'POST':
 		answer = request.form['answer']
-		if answer == 'catdog' or 'neither':
+		if answer == 'catdog' or 'dogcat' or 'mistake':
 			return render_template('question2.html')
 		else:
 			return render_template('losing_screen.html')

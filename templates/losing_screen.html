@@ -1,9 +1,35 @@
 <!DOCTYPE html>
 <html>
+<style type="text/css">
+body {
+      animation: colorchange 2.5s; /* animation-name followed by duration in seconds*/
+         /* you could also use milliseconds (ms) or something like 2.5s */
+      -webkit-animation: colorchange 2.5s; /* Chrome and Safari */
+    }
+
+    @keyframes colorchange
+    {
+      0%   {background: red;}
+      25%  {background: yellow;}
+      50%  {background: blue;}
+      75%  {background: green;}
+      100% {background: red;}
+    }
+
+    @-webkit-keyframes colorchange /* Safari and Chrome - necessary duplicate */
+    {
+      0%   {background: red;}
+      25%  {background: yellow;}
+      50%  {background: blue;}
+      75%  {background: green;}
+      100% {background: red;}
+    }
+</style>
 <head>
 	<title></title>
 </head>
 <body>
-you lost
+<h1><p align = center>you lost, it was expected to happen...</p></h1>
+<img src="https://media.giphy.com/media/12msOFU8oL1eww/giphy.gif">
 </body>
 </html>
