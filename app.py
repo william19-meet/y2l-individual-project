@@ -11,10 +11,11 @@ def sign_up():
 		return render_template("question1.html")
 	else:
 		return render_template("home.html")
+
 @app.route('/people_who_tried', methods = ['GET', 'POST'])
 def people_who_failed():
-	if request.method == 'POST':
-		return render_template('people_who_failed')
+	if request.method == 'GET':
+		return render_template('people_who_failed.html',accounts = get_all_accounts())
 
 @app.route('/question1', methods = ['GET', 'POST'])
 def question1():
