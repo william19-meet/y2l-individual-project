@@ -2,9 +2,9 @@
 <html>
 <style type="text/css">
 body {
-      animation: colorchange 2.5s; /* animation-name followed by duration in seconds*/
+      animation: colorchange 60s; /* animation-name followed by duration in seconds*/
          /* you could also use milliseconds (ms) or something like 2.5s */
-      -webkit-animation: colorchange 2.5s; /* Chrome and Safari */
+      -webkit-animation: colorchange 60s; /* Chrome and Safari */
     }
 
     @keyframes colorchange
@@ -29,7 +29,13 @@ body {
 	<title></title>
 </head>
 <body>
+<div align="center">
 <h1><p align = center>you lost, it was expected to happen...</p></h1>
 <img src="https://media.giphy.com/media/12msOFU8oL1eww/giphy.gif">
+<br>
+<button onclick="location.href = '{{url_for('question1')}}';">retry?</button>
+<!-- <br><br>
+<button onclick="location.href = '{{url_for('people_who_failed')}}';">see people who tried/failed?</button> -->
+</div>
 </body>
 </html>
