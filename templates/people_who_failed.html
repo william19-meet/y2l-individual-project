@@ -1,11 +1,36 @@
 <!DOCTYPE html>
 <html>
+<style type="text/css">
+body {
+      animation: colorchange 50s; /* animation-name followed by duration in seconds*/
+         /* you could also use milliseconds (ms) or something like 2.5s */
+      -webkit-animation: colorchange 50s; /* Chrome and Safari */
+    }
+
+    @keyframes colorchange
+    {
+      0%   {background: red;}
+      25%  {background: yellow;}
+      50%  {background: blue;}
+      75%  {background: green;}
+      100% {background: red;}
+    }
+
+    @-webkit-keyframes colorchange /* Safari and Chrome - necessary duplicate */
+    {
+      0%   {background: red;}
+      25%  {background: yellow;}
+      50%  {background: blue;}
+      75%  {background: green;}
+      100% {background: red;}
+    }
+</style>
 <head>
-	<title></title>
+  <title></title>
 </head>
 <body>
 {%for account in accounts%}
-{{account.name}}
+<h1>{{account.name}}</h1>
 {%endfor%}
 </body>
 </html>
